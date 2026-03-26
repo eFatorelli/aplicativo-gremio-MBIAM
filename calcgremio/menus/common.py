@@ -1,6 +1,6 @@
-from calcgremio import oparquivo, validar, tabelas, sistema
+from .. import oparquivo, validar, tabelas, sistema
 from typing import cast, Literal
-from calcgremio.classes import Usuario
+from ..classes import Usuario
 from datetime import date
 from time import sleep
 from rich.panel import Panel

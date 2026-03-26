@@ -1,8 +1,8 @@
-from calcgremio.oparquivo import *
+from ..oparquivo import *
 from rich.console import Console
 from rich import print
-from calcgremio.tabelas import tabela_cadastro
-from calcgremio.validar import nomemes
+from ..tabelas import tabela_cadastro
+from ..validar import nomemes
 
 console = Console()
 
