@@ -79,7 +79,7 @@ def menu_usuario(arquivo):
                     console.clear()
                     show_user = sistema.localizar_usuario(dados,localizador=localizador,metodo=cast(Literal['id','nome','apelido'],k))
                     if show_user is None:
-                        print('[red]USUÁRIO NÃO ENCONTRADO')
+                        print('[red]USUÁRIO NÃO ENCONTRADO. VERIFIQUE MAIÚSCULAS E MINÚSCULAS!')
                     else:
                         while True:
                             tabelas.tabela_user(show_user)
@@ -121,7 +121,9 @@ def menu_usuario(arquivo):
                                         oparquivo.escreva_arq(arquivo,dados,ext='json',sobrescreva=True)
                                         console.clear()
                                         print('[red]USUÁRIO EXCLUÍDO COM SUCESSO')
-                                    break
+                                        break
+                                    else:
+                                        console.clear()
                                 case 5:
                                     oparquivo.escreva_arq(arquivo, dados, ext='json', sobrescreva=True)
                                     console.clear()
