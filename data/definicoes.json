@@ -1,0 +1,15 @@
+{
+    "mensalidade": 30.0,
+    "extra": {
+        "ar condicionado": [
+            42.0,
+            3
+        ]
+    },
+    "banco": {
+        "chave": "---CHAVE PIX NÃO INSERIDA---",
+        "tipo": "Chave aleatória",
+        "dono": "---CHAVE PIX NÃO INSERIDA---"
+    },
+    "cabecalho cobranca": "CARREGADORES DE PIANO, segue a cobrança do mês, juntamente à mensalidade. Os nomes com (*) estão somados com cobranças atrasadas. Não deixem o grêmio morrer!!!"
+}

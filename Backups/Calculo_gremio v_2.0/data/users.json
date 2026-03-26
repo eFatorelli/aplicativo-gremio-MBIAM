@@ -1,0 +1,315 @@
+[
+    {
+        "id": 1,
+        "nome": "Pinheiro",
+        "apelidos": [
+            "PNR",
+            "99044"
+        ],
+        "historico": {
+            "2026-01": {
+                "mensalidade": true,
+                "pagou": false,
+                "val_final": 75.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        false
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Fatorelli",
+        "apelidos": [
+            "FatorL",
+            "Fator L",
+            "Fardão",
+            "97715",
+            "Fatoreli",
+            "Fatorele",
+            "Fatorelle"
+        ],
+        "historico": {
+            "2026-02": {
+                "mensalidade": true,
+                "pagou": false,
+                "val_final": 169.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        true
+                    ],
+                    "pipoqueira": [
+                        42.0,
+                        true
+                    ],
+                    "freezer": [
+                        50.0,
+                        true
+                    ]
+                }
+            },
+            "2026-03": {
+                "mensalidade": true,
+                "ar_cond": false,
+                "pagou": false,
+                "val_final": 50.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        false
+                    ]
+                }
+            },
+            "2026-01": {
+                "mensalidade": true,
+                "ar_cond": false,
+                "pagou": false,
+                "val_final": 50.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        true
+                    ]
+                }
+            },
+            "2025-12": {
+                "mensalidade": true,
+                "ar_cond": false,
+                "pagou": false,
+                "val_final": 50.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        true
+                    ]
+                }
+            },
+            "2025-11": {
+                "mensalidade": true,
+                "ar_cond": false,
+                "pagou": false,
+                "val_final": 50.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        false
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Lavinas",
+        "apelidos": [
+            "Capelão",
+            "Nagato"
+        ],
+        "historico": {
+            "2026-02": {
+                "mensalidade": true,
+                "ar_cond": false,
+                "pagou": true,
+                "val_final": 75.0
+            }
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Faria",
+        "apelidos": [],
+        "historico": {
+            "2026-02": {
+                "mensalidade": true,
+                "pagou": false,
+                "val_final": 72.0,
+                "extra": {
+                    "ar condicionado": [
+                        42.0,
+                        true
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Ribeiro",
+        "apelidos": [
+            "RIO"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 6,
+        "nome": "Rafael",
+        "apelidos": [
+            "Punhetinha",
+            "Mais antigo",
+            "Biguá",
+            "Salto livre"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 7,
+        "nome": "Bernardes",
+        "apelidos": [
+            "Barnardes"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 9,
+        "nome": "Verneck",
+        "apelidos": [],
+        "historico": {}
+    },
+    {
+        "id": 10,
+        "nome": "De Oliveira",
+        "apelidos": [
+            "Verneque"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 11,
+        "nome": "Ladeira",
+        "apelidos": [],
+        "historico": {}
+    },
+    {
+        "id": 12,
+        "nome": "Esteves",
+        "apelidos": [
+            "Steve",
+            "Steve Johnson",
+            "Sorriso",
+            "Beiço",
+            "Beiça"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 13,
+        "nome": "Cardoso",
+        "apelidos": [
+            "Bee",
+            "Bee Movie"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 14,
+        "nome": "Galone",
+        "apelidos": [
+            "Galo",
+            "Tenentiante"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 15,
+        "nome": "Vieira",
+        "apelidos": [],
+        "historico": {}
+    },
+    {
+        "id": 16,
+        "nome": "Galvão",
+        "apelidos": [
+            "Mano galvas",
+            "Galvas",
+            "Galvas Burguer",
+            "98988"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 17,
+        "nome": "Fontes",
+        "apelidos": [
+            "Fonteca",
+            "Teca",
+            "91496"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 18,
+        "nome": "Bento",
+        "apelidos": [
+            "Bentola",
+            "Serpa",
+            "Tola",
+            "Bentífero",
+            "Michelangelo"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 8,
+        "nome": "Marcio Farias",
+        "apelidos": [
+            "M Farias",
+            "Farias",
+            "Márcio Farias",
+            "Urubu Rei"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 19,
+        "nome": "Merichello",
+        "apelidos": [
+            "Merichelo",
+            "Wolfgang"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 20,
+        "nome": "Herbert",
+        "apelidos": [
+            "Hebert",
+            "Biridin",
+            "Michael Jackson"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 21,
+        "nome": "Duilio",
+        "apelidos": [
+            "Diulio",
+            "Diuilio",
+            "Varado"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 22,
+        "nome": "Mahl",
+        "apelidos": [
+            "Mal",
+            "Evil",
+            "Bad",
+            "Maligno"
+        ],
+        "historico": {}
+    },
+    {
+        "id": 23,
+        "nome": "Denilson",
+        "apelidos": [
+            "Balão",
+            "Baloon"
+        ],
+        "historico": {}
+    }
+]
