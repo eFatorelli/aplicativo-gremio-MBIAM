@@ -1,4 +1,0 @@
-Catarina;81.0;True
-Dhy;77.0;False
-Gabi;74.0;False
-Let;74.0;True
