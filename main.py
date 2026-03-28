@@ -1,5 +1,5 @@
 import sys
-from calcgremio import menus, oparquivo
+from modules import menus, oparquivo
 from rich.traceback import install
 from rich import print
 from pathlib import Path

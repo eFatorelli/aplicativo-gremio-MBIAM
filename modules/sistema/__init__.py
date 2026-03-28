@@ -19,8 +19,8 @@ def cadastrar_usuario(arquivo, nome):
              False caso não seja possível criar (problemas de arquivo)
              None caso o arquivo esteja corrompido.
     """
-    from calcgremio.classes import Usuario
-    from calcgremio.validar import valida_sn
+    from .classes import Usuario
+    from .validar import valida_sn
 
     if not arq_existe(arquivo, criar=False):
         if cria_arq(arquivo):

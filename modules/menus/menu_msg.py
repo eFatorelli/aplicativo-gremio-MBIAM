@@ -111,8 +111,14 @@ def menu_msg(arquivo, arquivo_def):
                     console.clear()
                     break
                 case 3:
-                    cabecalho = console.input('Digite um novo cabeçalho para a mensagem.\n'
+                    texto = console.input('Digite um novo cabeçalho para a mensagem. Para cancelar, digite "CANCELAR".\n'
                                               'ATENÇÃO: Colar textos com quebra de linha resultará em ERRO\n  → ')
+                    if (texto.lower() == 'cancelar' or not validar.valida_sn(
+                            f'[yellow]Tem certeza de que quer reescrever a mensagem para \n'
+                            f'[default underline]"{texto}"[/]?[/] [ S / N ]\n → ',n_auto= False)):
+                        continue
+
+                    cabecalho = texto
                     definicoes['cabecalho cobranca'] = cabecalho
                     oparquivo.escreva_arq(arquivo_def, definicoes, sobrescreva=True)
                     console.clear()

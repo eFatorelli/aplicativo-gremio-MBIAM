@@ -1,8 +1,6 @@
 from .common import *
 
 def menu_usuario(arquivo):
-    from calcgremio.sistema import cadastrar_usuario
-
     dados = oparquivo.ler_arq(arquivo,ext='json')
 
     while True:
@@ -32,7 +30,7 @@ def menu_usuario(arquivo):
                             break
                     else:
                         break
-                oparquivo.escreva_arq(arquivo,cadastrar_usuario(arquivo,new_user), sobrescreva=True)
+                oparquivo.escreva_arq(arquivo,sistema.cadastrar_usuario(arquivo,new_user), sobrescreva=True)
             case 2:
                 while True:
                     console.clear()
