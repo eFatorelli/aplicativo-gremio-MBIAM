@@ -1,7 +1,6 @@
 from .common import *
 
 def tabela_pesquisa(arquivo, *, filtro: Literal['id', 'nome'] = 'id'):
-    from .oparquivo import ler_arq
     dados = ler_arq(arquivo, ext='json')
     tabela = Table(title='LISTA DE USUÁRIOS',title_style='dark_orange',
                    show_header=False,row_styles=['on default','on grey3'])

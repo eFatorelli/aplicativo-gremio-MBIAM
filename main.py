@@ -7,7 +7,6 @@ from rich.console import Console
 from time import sleep
 
 
-
 if getattr(sys, 'frozen', False):
     DIR_BASE = Path(sys.executable).parent
 else:

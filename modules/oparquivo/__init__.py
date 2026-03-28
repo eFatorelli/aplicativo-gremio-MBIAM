@@ -1,44 +1,25 @@
 import json
 from typing import Literal
+from pathlib import Path
 
 
-def arq_existe(arquivo, *, criar: Literal[True,False] = False):
+def cria_arq(arquivo: Path) -> bool:
     """
-    ->Verifica se um arquivo existe. Se o usuário preferir, cria o arquivo, caso não exista.
-    :param arquivo: Arquivo a ser criado no formato 'str'.
-    :param criar: Verifica a existência do arquivo. Caso True, cria o arquivo em sua ausência.
-    :return: True se o arquivo existe OU se criar==True e é possível criar o arquivo.
-            Retorna False caso criar==True e o arquivo não possa ser criado.
-            Retorna False caso criar==False e o arquivo não existe.
-    """
-    try:
-        a=open(arquivo, 'rt')
-        a.close()
-        return True
-    except FileNotFoundError:
-        if not criar:
-            return False
-        else:
-            return cria_arq(arquivo)
-
-
-def cria_arq(arquivo):
-    """
-    -> Cria um arquivo de texto.
-    :param arquivo: Nome do arquivo a ser criado.
+    -> Cria um arquivo.
+    :param arquivo: Nome e caminho do arquivo a ser criado.
     :return: True caso consiga criar o arquivo.
              False caso haja algum erro.
     """
     try:
-        a = open(arquivo, 'w')
-        a.close()
+        arquivo.touch(exist_ok=False)
         return True
     except FileNotFoundError:
         print('ERRO - A pasta não existe ou não foi endereçada corretamente.')
-        return False
+    except FileExistsError:
+        print('O arquivo já existe!')
     except Exception as e:
         print('ERRO ao criar arquivo -',e.__class__)
-        return False
+    return False
 
 
 def ler_arq(arquivo, *, ext: Literal['txt','json'] = 'json'):
@@ -80,19 +61,3 @@ def escreva_arq(arquivo, escrever, *, ext: Literal['txt','json'] ='json', sobres
                 json.dump(escrever, a, indent=4, ensure_ascii=False)
     except Exception as e:
         print('ERRO ao preencher dados -', e.__class__)
-
-
-def zerar_arq(arquivo):
-    """
-    -> Sobrescreve um arquivo, zerando ele.
-    :param arquivo: Arquivo a ser sobrescrito.
-    :return: True caso consiga sobrescrever o arquivo;
-             False caso haja algum erro ao sobrescrever o arquivo.
-    """
-    try:
-        with open(arquivo, 'wt') as a:
-            a.write('')
-        return True
-    except Exception as e:
-        print('ERRO ao sobrescrever arquivos -', e.__class__)
-        return False

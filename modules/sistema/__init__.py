@@ -3,6 +3,7 @@ from rich.console import Console
 from rich import print
 from ..tabelas import tabela_cadastro
 from ..validar import nomemes
+from pathlib import Path
 
 console = Console()
 
@@ -19,10 +20,11 @@ def cadastrar_usuario(arquivo, nome):
              False caso não seja possível criar (problemas de arquivo)
              None caso o arquivo esteja corrompido.
     """
-    from .classes import Usuario
-    from .validar import valida_sn
+    from ..classes import Usuario
+    from ..validar import valida_sn
 
-    if not arq_existe(arquivo, criar=False):
+
+    if not arquivo.exists():
         if cria_arq(arquivo):
             escreva_arq(arquivo,[],ext='json',sobrescreva= True)
         else:
